@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Hiring Prediction</title>
+</head>
+
+<body>
+
+<h2>AI-Based Hiring Prediction System</h2>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<form action="/predict" method="post">
+
+Skills:<br>
+<input type="text" name="skills" required><br><br>
+
+Experience (Years):<br>
+<input type="number" step="0.1" name="experience" required><br><br>
+
+Education:<br>
+<select name="education">
+<option>B.Tech</option>
+<option>M.Tech</option>
+<option>B.Sc</option>
+<option>MBA</option>
+</select><br><br>
+
+Certifications:<br>
+<input type="text" name="certifications"><br><br>
+
+Projects Count:<br>
+<input type="number" name="projects"><br><br>
+
+Salary Expectation:<br>
+<input type="number" name="salary"><br><br>
+
+<input type="submit" value="Predict">
+
+</form>
+
+{% if prediction %}
+<h3>Result: {{ prediction }}</h3>
+<h4>Probability: {{ prob }}</h4>
+{% endif %}
+
+</body>
+</html>
