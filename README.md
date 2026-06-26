@@ -35,19 +35,20 @@ AI-based-hiring-prediction-system/
 │── static/
 │── dataset/
 │── README.md
-Installation
+
+Installation:
 Clone the repository.
 Install the required packages:
 pip install -r requirements.txt
 Run the application:
 python app.py
-Open your browser and visit:
-http://127.0.0.1:5000
-Future Improvements
+Open your browser and visit link.
+
+Future Improvements:
 Resume PDF parsing
 Deep Learning models
 Integration with real recruitment platforms
 Improved prediction accuracy
-Author
 
+Author:
 Shreya Kadtan
